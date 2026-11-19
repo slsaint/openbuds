@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Design tokens — tweak these to reskin the whole app. */
+@theme {
+  --color-bg: #0b0d12;
+  --color-surface: #141821;
+  --color-surface-2: #1b212d;
+  --color-border: #262d3a;
+  --color-accent: #4f8cff;
+  --color-accent-soft: #1e2a44;
+  --color-text: #e6e9ef;
+  --color-muted: #8b93a7;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+/* Thin, unobtrusive scrollbars that match the dark theme. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
